@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+  font-family: "Protest Revolution", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out infinite;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+.knockout {
+  font-size: 3rem;
+  color: #000;
+  -webkit-text-stroke: 2px #381bdd;
+  text-transform: uppercase;
+  animation: flash 0.5s infinite;
+}
+
+.knockout .light {
+  color: #f00;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes flash {
+  0%, 100% {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+#name {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #772c09;
+  /* font-weight: bold; */
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+
+}
