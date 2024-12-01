@@ -13,6 +13,7 @@ const App = () => {
     "Wishing you a Merry Christmas and a Happy New Year in advance! 🎄✨",
     "you here, Nice 🥳",
     "Send funds to my opay, so i go fet chop, thanks🎉",
+    "8114822869",
     "OLATUNJI OLUWASHOLA💖"
   ];
 
